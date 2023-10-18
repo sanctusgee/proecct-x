@@ -9,7 +9,7 @@ def main():
     return '''
      <form action="/echo_user_input" method="POST">
          <input name="user_input">
-         <input type="submit" value="SubmitX!">
+         <input type="submit" value="Submit!">
      </form>
      '''
 
@@ -19,6 +19,6 @@ def echo_input():
     return "You entered: " + input_text
 
 
-# if __name__ == "__main__":
-  #  port = int(os.environ.get("PORT", 5000))
-   # app.run(host="0.0.0.0", port=port)
+if __name__ == "__main__":
+  port = int(os.environ.get("PORT", 5000))
+  app.run(host="0.0.0.0", port=port)
